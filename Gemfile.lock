@@ -4,6 +4,7 @@ GEM
     ansi (1.5.0)
     builder (3.2.2)
     coderay (1.1.1)
+    diff-lcs (1.2.5)
     ffi (1.9.10)
     formatador (0.2.5)
     guard (2.13.0)
@@ -19,6 +20,10 @@ GEM
     guard-minitest (2.4.4)
       guard-compat (~> 1.2)
       minitest (>= 3.0)
+    guard-rspec (4.6.5)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
     listen (3.1.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9.7)
@@ -41,6 +46,19 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    rspec (3.4.0)
+      rspec-core (~> 3.4.0)
+      rspec-expectations (~> 3.4.0)
+      rspec-mocks (~> 3.4.0)
+    rspec-core (3.4.4)
+      rspec-support (~> 3.4.0)
+    rspec-expectations (3.4.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-mocks (3.4.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.4.0)
+    rspec-support (3.4.1)
     ruby-progressbar (1.8.0)
     shellany (0.0.1)
     slop (3.6.0)
@@ -52,8 +70,10 @@ PLATFORMS
 DEPENDENCIES
   guard
   guard-minitest
+  guard-rspec
   minitest
   minitest-reporters
+  rspec
 
 BUNDLED WITH
    1.10.6
